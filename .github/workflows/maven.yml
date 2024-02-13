@@ -45,7 +45,7 @@ jobs:
 
 # 도커 이미지 빌드
     - name: Build the Docker image
-      run: docker build -t jungbum/test
+      run: docker buildx build -t jungbum/test
       
 # 이미지 띄우기
     - name: push Docker image
