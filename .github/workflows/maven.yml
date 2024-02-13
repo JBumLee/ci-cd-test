@@ -45,11 +45,11 @@ jobs:
 
 # 도커 이미지 빌드
     - name: Build the Docker image
-      run: docker build -t jungbum/test:tagname
+      run: docker build -t jungbum/test
       
 # 이미지 띄우기
     - name: push Docker image
-      run: docker push jungbum/test:tagname
+      run: docker push jungbum/test
       
 # 쉘 스크립트 실행
     - name: execute shell script
